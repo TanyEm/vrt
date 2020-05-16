@@ -15,6 +15,12 @@
 		73AB3BDD24702A090050C676 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73AB3BDB24702A090050C676 /* LaunchScreen.storyboard */; };
 		73AB3BE824702A0A0050C676 /* VirtaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB3BE724702A0A0050C676 /* VirtaTests.swift */; };
 		73AB3BF324702A0A0050C676 /* VirtaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB3BF224702A0A0050C676 /* VirtaUITests.swift */; };
+		73AB3C07247037940050C676 /* BasicStationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB3C06247037940050C676 /* BasicStationInfo.swift */; };
+		73AB3C0924703F500050C676 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB3C0824703F500050C676 /* Station.swift */; };
+		73AB3C0B247061640050C676 /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB3C0A247061640050C676 /* Connector.swift */; };
+		73AB3C0D247061D20050C676 /* ConnectorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB3C0C247061D20050C676 /* ConnectorType.swift */; };
+		73AB3C0F2470645B0050C676 /* EVSE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB3C0E2470645B0050C676 /* EVSE.swift */; };
+		73AB3C11247065260050C676 /* Pricing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB3C10247065260050C676 /* Pricing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		73AB3BEE24702A0A0050C676 /* VirtaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VirtaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73AB3BF224702A0A0050C676 /* VirtaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtaUITests.swift; sourceTree = "<group>"; };
 		73AB3BF424702A0A0050C676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73AB3C06247037940050C676 /* BasicStationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicStationInfo.swift; sourceTree = "<group>"; };
+		73AB3C0824703F500050C676 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		73AB3C0A247061640050C676 /* Connector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connector.swift; sourceTree = "<group>"; };
+		73AB3C0C247061D20050C676 /* ConnectorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectorType.swift; sourceTree = "<group>"; };
+		73AB3C0E2470645B0050C676 /* EVSE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EVSE.swift; sourceTree = "<group>"; };
+		73AB3C10247065260050C676 /* Pricing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pricing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +111,12 @@
 		73AB3BCF24702A030050C676 /* Virta */ = {
 			isa = PBXGroup;
 			children = (
+				73AB3C0324702CA50050C676 /* Networking */,
+				73AB3C0224702C8F0050C676 /* ViewModels */,
+				73AB3C0124702C2F0050C676 /* Controllers */,
+				73AB3C0024702BDB0050C676 /* Models */,
 				73AB3BD024702A030050C676 /* AppDelegate.swift */,
 				73AB3BD224702A030050C676 /* SceneDelegate.swift */,
-				73AB3BD424702A030050C676 /* ViewController.swift */,
 				73AB3BD624702A030050C676 /* Main.storyboard */,
 				73AB3BD924702A090050C676 /* Assets.xcassets */,
 				73AB3BDB24702A090050C676 /* LaunchScreen.storyboard */,
@@ -126,6 +141,41 @@
 				73AB3BF424702A0A0050C676 /* Info.plist */,
 			);
 			path = VirtaUITests;
+			sourceTree = "<group>";
+		};
+		73AB3C0024702BDB0050C676 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				73AB3C0824703F500050C676 /* Station.swift */,
+				73AB3C06247037940050C676 /* BasicStationInfo.swift */,
+				73AB3C0A247061640050C676 /* Connector.swift */,
+				73AB3C0C247061D20050C676 /* ConnectorType.swift */,
+				73AB3C0E2470645B0050C676 /* EVSE.swift */,
+				73AB3C10247065260050C676 /* Pricing.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		73AB3C0124702C2F0050C676 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				73AB3BD424702A030050C676 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		73AB3C0224702C8F0050C676 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		73AB3C0324702CA50050C676 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +309,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73AB3C0F2470645B0050C676 /* EVSE.swift in Sources */,
+				73AB3C0D247061D20050C676 /* ConnectorType.swift in Sources */,
 				73AB3BD524702A030050C676 /* ViewController.swift in Sources */,
+				73AB3C11247065260050C676 /* Pricing.swift in Sources */,
+				73AB3C07247037940050C676 /* BasicStationInfo.swift in Sources */,
 				73AB3BD124702A030050C676 /* AppDelegate.swift in Sources */,
+				73AB3C0B247061640050C676 /* Connector.swift in Sources */,
 				73AB3BD324702A030050C676 /* SceneDelegate.swift in Sources */,
+				73AB3C0924703F500050C676 /* Station.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
