@@ -38,4 +38,3 @@ struct BasicStationInfo: Codable {
     }
 }
 
-

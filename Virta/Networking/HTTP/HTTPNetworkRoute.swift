@@ -11,7 +11,6 @@ import Foundation
 // It contains all the needed routes/endpoints/paths.
 public enum HTTPNetworkRoute: String {
     
-    case postAuth = "auth"
-    case getNearesStations = "stations"
-    case editPost = "stations/:id"
+    case postAuthResource = "/auth"
+    case getStationsResource = "/stations"
 }

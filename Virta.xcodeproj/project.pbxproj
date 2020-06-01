@@ -14,6 +14,9 @@
 		737822942470AD67009091DE /* HTTPNetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737822932470AD67009091DE /* HTTPNetworkResponse.swift */; };
 		737822962470AE83009091DE /* URLEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737822952470AE83009091DE /* URLEncoder.swift */; };
 		737822982470B111009091DE /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737822972470B111009091DE /* Result.swift */; };
+		7378229E247145F1009091DE /* AuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7378229D247145F1009091DE /* AuthRequest.swift */; };
+		737822A024714673009091DE /* StationRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7378229F24714673009091DE /* StationRequests.swift */; };
+		737822A224714949009091DE /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737822A124714949009091DE /* Auth.swift */; };
 		73AB3BD124702A030050C676 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB3BD024702A030050C676 /* AppDelegate.swift */; };
 		73AB3BD324702A030050C676 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB3BD224702A030050C676 /* SceneDelegate.swift */; };
 		73AB3BD524702A030050C676 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB3BD424702A030050C676 /* ViewController.swift */; };
@@ -55,6 +58,9 @@
 		737822932470AD67009091DE /* HTTPNetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPNetworkResponse.swift; sourceTree = "<group>"; };
 		737822952470AE83009091DE /* URLEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncoder.swift; sourceTree = "<group>"; };
 		737822972470B111009091DE /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		7378229D247145F1009091DE /* AuthRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequest.swift; sourceTree = "<group>"; };
+		7378229F24714673009091DE /* StationRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationRequests.swift; sourceTree = "<group>"; };
+		737822A124714949009091DE /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		73AB3BCD24702A030050C676 /* Virta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Virta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73AB3BD024702A030050C676 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73AB3BD224702A030050C676 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +132,8 @@
 		7378228A2470A27A009091DE /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				7378229D247145F1009091DE /* AuthRequest.swift */,
+				7378229F24714673009091DE /* StationRequests.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -194,6 +202,7 @@
 				73AB3C0C247061D20050C676 /* ConnectorType.swift */,
 				73AB3C0E2470645B0050C676 /* EVSE.swift */,
 				73AB3C10247065260050C676 /* Pricing.swift */,
+				737822A124714949009091DE /* Auth.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -358,7 +367,10 @@
 				73AB3C0F2470645B0050C676 /* EVSE.swift in Sources */,
 				737822902470A6FA009091DE /* HTTPNetworkError.swift in Sources */,
 				73AB3C0D247061D20050C676 /* ConnectorType.swift in Sources */,
+				7378229E247145F1009091DE /* AuthRequest.swift in Sources */,
+				737822A224714949009091DE /* Auth.swift in Sources */,
 				73AB3BD524702A030050C676 /* ViewController.swift in Sources */,
+				737822A024714673009091DE /* StationRequests.swift in Sources */,
 				7378228E2470A54C009091DE /* HTTPMethod.swift in Sources */,
 				737822982470B111009091DE /* Result.swift in Sources */,
 				73AB3C11247065260050C676 /* Pricing.swift in Sources */,

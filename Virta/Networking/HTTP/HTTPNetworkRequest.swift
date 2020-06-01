@@ -11,12 +11,14 @@ import Foundation
 public typealias HTTPParameters = [String: Any]?
 public typealias HTTPHeaders = [String: Any]?
 
+let baseURL = "https://apitest.virta.fi/v4"
+
 struct HTTPNetworkRequest {
     
     // Here we set up the body, method, headers, and parameters of the request
-    static func configureHTTPRequest(from route: HTTPNetworkRoute, with parameters: HTTPParameters, includes headers: HTTPHeaders, contains body: Data?, and method: HTTPMethod) throws -> URLRequest {
+    static func configureHTTPRequest(from route: String, with parameters: HTTPParameters, includes headers: HTTPHeaders, contains body: Data?, and method: HTTPMethod) throws -> URLRequest {
         
-        guard let url = URL(string: "https://apitest.virta.fi/v4\(route.rawValue)") else { throw HTTPNetworkError.missingURL}
+        guard let url = URL(string: "\(baseURL)\(route)") else { throw HTTPNetworkError.missingURL}
         
         var request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10.0)
         
