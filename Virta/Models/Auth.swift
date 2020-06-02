@@ -19,9 +19,9 @@ struct Auth: Codable {
 }
 
 struct AuthToken: Codable {
-    let token: String?
+    let token: String
     
-    init(token:String?) {
+    init(token: String) {
         self.token = token
     }
 }

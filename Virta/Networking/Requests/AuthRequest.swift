@@ -20,14 +20,14 @@ struct AuthRequest {
         var httpRequestBody: Data?
         
         do {
-           httpRequestBody = try JSONSerialization.data(withJSONObject: authRequest, options: [])
+            httpRequestBody = try JSONEncoder().encode(authRequest)
         } catch let error {
             print(error)
             return
         }
             
         do{
-            let request = try HTTPNetworkRequest.configureHTTPRequest(from: .postAuthResource, with: nil, includes: header, contains: httpRequestBody, and: .post)
+            let request = try HTTPNetworkRequest.configureHTTPRequest(from: HTTPNetworkRoute.postAuthResource.rawValue, with: nil, includes: header, contains: httpRequestBody, and: .post)
             
             authSession.dataTask(with: request) { (data, res, err) in
                 
@@ -35,7 +35,6 @@ struct AuthRequest {
                     
                     let result = HTTPNetworkResponse.handleNetworkResponse(for: response)
                     switch result {
-                
                     case .success:
                         let result = try? JSONDecoder().decode(AuthToken.self, from: unwrappedData)
                         completion(Result.success(result!))

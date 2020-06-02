@@ -9,6 +9,7 @@
 import Foundation
 
 struct StationRequest {
+    
     static let shared = AuthRequest()
     let stationSession = URLSession(configuration: .default)
     let header = ["Content-Type":"application/json"]
@@ -26,7 +27,7 @@ struct StationRequest {
         ] as HTTPParameters
         
         do{
-            let request = try HTTPNetworkRequest.configureHTTPRequest(from: .getStationsResource.rawValue, with: parameters, includes: header, contains: nil, and: .get)
+            let request = try HTTPNetworkRequest.configureHTTPRequest(from: HTTPNetworkRoute.getStationsResource.rawValue, with: parameters, includes: header, contains: nil, and: .get)
             
             stationSession.dataTask(with: request) { (data, res, err) in
                 
@@ -51,7 +52,7 @@ struct StationRequest {
     
     func getStationByID(id: Int, _ completion: @escaping (Result<Station>) -> ()) {
         
-        let path = "\(HTTPNetworkRoute.getStationsResource)/\(id)"
+        let path = "\(HTTPNetworkRoute.getStationsResource.rawValue)/\(id)"
         
         do{
             let request = try HTTPNetworkRequest.configureHTTPRequest(from: path, with: nil, includes: header, contains: nil, and: .get)

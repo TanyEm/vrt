@@ -15,7 +15,7 @@
 		737822962470AE83009091DE /* URLEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737822952470AE83009091DE /* URLEncoder.swift */; };
 		737822982470B111009091DE /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737822972470B111009091DE /* Result.swift */; };
 		7378229E247145F1009091DE /* AuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7378229D247145F1009091DE /* AuthRequest.swift */; };
-		737822A024714673009091DE /* StationRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7378229F24714673009091DE /* StationRequests.swift */; };
+		737822A024714673009091DE /* StationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7378229F24714673009091DE /* StationRequest.swift */; };
 		737822A224714949009091DE /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737822A124714949009091DE /* Auth.swift */; };
 		73AB3BD124702A030050C676 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB3BD024702A030050C676 /* AppDelegate.swift */; };
 		73AB3BD324702A030050C676 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB3BD224702A030050C676 /* SceneDelegate.swift */; };
@@ -23,7 +23,7 @@
 		73AB3BD824702A030050C676 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73AB3BD624702A030050C676 /* Main.storyboard */; };
 		73AB3BDA24702A090050C676 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73AB3BD924702A090050C676 /* Assets.xcassets */; };
 		73AB3BDD24702A090050C676 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73AB3BDB24702A090050C676 /* LaunchScreen.storyboard */; };
-		73AB3BE824702A0A0050C676 /* VirtaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB3BE724702A0A0050C676 /* VirtaTests.swift */; };
+		73AB3BE824702A0A0050C676 /* VirtaNetworkIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB3BE724702A0A0050C676 /* VirtaNetworkIntegrationTests.swift */; };
 		73AB3BF324702A0A0050C676 /* VirtaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB3BF224702A0A0050C676 /* VirtaUITests.swift */; };
 		73AB3C07247037940050C676 /* BasicStationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB3C06247037940050C676 /* BasicStationInfo.swift */; };
 		73AB3C0924703F500050C676 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB3C0824703F500050C676 /* Station.swift */; };
@@ -59,7 +59,7 @@
 		737822952470AE83009091DE /* URLEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncoder.swift; sourceTree = "<group>"; };
 		737822972470B111009091DE /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		7378229D247145F1009091DE /* AuthRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequest.swift; sourceTree = "<group>"; };
-		7378229F24714673009091DE /* StationRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationRequests.swift; sourceTree = "<group>"; };
+		7378229F24714673009091DE /* StationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationRequest.swift; sourceTree = "<group>"; };
 		737822A124714949009091DE /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		73AB3BCD24702A030050C676 /* Virta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Virta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73AB3BD024702A030050C676 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 		73AB3BDC24702A090050C676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73AB3BDE24702A090050C676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73AB3BE324702A0A0050C676 /* VirtaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VirtaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		73AB3BE724702A0A0050C676 /* VirtaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtaTests.swift; sourceTree = "<group>"; };
+		73AB3BE724702A0A0050C676 /* VirtaNetworkIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtaNetworkIntegrationTests.swift; sourceTree = "<group>"; };
 		73AB3BE924702A0A0050C676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73AB3BEE24702A0A0050C676 /* VirtaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VirtaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73AB3BF224702A0A0050C676 /* VirtaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtaUITests.swift; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				7378229D247145F1009091DE /* AuthRequest.swift */,
-				7378229F24714673009091DE /* StationRequests.swift */,
+				7378229F24714673009091DE /* StationRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -178,7 +178,7 @@
 		73AB3BE624702A0A0050C676 /* VirtaTests */ = {
 			isa = PBXGroup;
 			children = (
-				73AB3BE724702A0A0050C676 /* VirtaTests.swift */,
+				73AB3BE724702A0A0050C676 /* VirtaNetworkIntegrationTests.swift */,
 				73AB3BE924702A0A0050C676 /* Info.plist */,
 			);
 			path = VirtaTests;
@@ -370,7 +370,7 @@
 				7378229E247145F1009091DE /* AuthRequest.swift in Sources */,
 				737822A224714949009091DE /* Auth.swift in Sources */,
 				73AB3BD524702A030050C676 /* ViewController.swift in Sources */,
-				737822A024714673009091DE /* StationRequests.swift in Sources */,
+				737822A024714673009091DE /* StationRequest.swift in Sources */,
 				7378228E2470A54C009091DE /* HTTPMethod.swift in Sources */,
 				737822982470B111009091DE /* Result.swift in Sources */,
 				73AB3C11247065260050C676 /* Pricing.swift in Sources */,
@@ -389,7 +389,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73AB3BE824702A0A0050C676 /* VirtaTests.swift in Sources */,
+				73AB3BE824702A0A0050C676 /* VirtaNetworkIntegrationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

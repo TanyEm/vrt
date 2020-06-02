@@ -21,9 +21,8 @@ struct Station: Codable {
     let provider: String?
     let pictures: [String]?
     let evses: [EVSE]?
-    let alertMessage: String?
     
-    init(id: Int?, name: String?, latitude: Double?, longitude: Double?, icon: Int?, address: String?, city: String?, openHours: String?, provider: String?, pictures: [String]?, evses: [EVSE]?, alertMessage: String?) {
+    init(id: Int?, name: String?, latitude: Double?, longitude: Double?, icon: Int?, address: String?, city: String?, openHours: String?, provider: String?, pictures: [String]?, evses: [EVSE]?) {
         self.id = id
         self.name = name
         self.latitude = latitude
@@ -35,6 +34,5 @@ struct Station: Codable {
         self.provider = provider
         self.pictures = pictures
         self.evses = evses
-        self.alertMessage = alertMessage
     }
 }
