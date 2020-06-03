@@ -1,0 +1,973 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04B881314801741FD14EB1BE691B9E44 /* Pods-VirtaTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 116F2772996FB11E9A7A85DA03D77B1C /* Pods-VirtaTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A1E9D786CA1040C50244F3427482C2C /* SwiftKeychainWrapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F956CC19960F45AA2727F6A488970B2 /* SwiftKeychainWrapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BB72D35C1614D5955F927774DCC7C44 /* SwiftKeychainWrapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DADBACD97D0C72778F39C4FB1ED34C /* SwiftKeychainWrapper-dummy.m */; };
+		26712592A92EC613BBFAB9237DA46E92 /* Pods-Virta-VirtaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB549467E6FD510FF7333A68B62E920D /* Pods-Virta-VirtaUITests-dummy.m */; };
+		35C7EB60E66E2814886504B822190484 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		3A246CB408E326D4798A114169A4D9E3 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995A8465EDF7D2D92F0F56C96C7A63A6 /* KeychainWrapper.swift */; };
+		5ACEDBB8A750BFB658C8E4CD4DC04056 /* Pods-VirtaTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD82172753EA745211C9B31A54E6924 /* Pods-VirtaTests-dummy.m */; };
+		714B4B1282854FE3F409A1B9AC7F9621 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		725690EFFAEF9F56C09BD1A592944091 /* Pods-Virta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8A92C37B1074AA0C57711D3D378E7 /* Pods-Virta-dummy.m */; };
+		7BDEA58982AE38EC64F549D981FD45E6 /* SwiftKeychainWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = E241273BAE3E42DBA5CE96CA53E41F1B /* SwiftKeychainWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D217AD072DD9C3A5F0630D7841C4A1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		853500B973255E0957451456FAAD6E31 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8FC32410D15B8DDD1C19F0D6707302 /* KeychainItemAccessibility.swift */; };
+		A96C9A9F5221227C8FDF7810C6CC0196 /* Pods-Virta-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D4BC9DDDD9BC5D02C4D21B79668A0142 /* Pods-Virta-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1D9361368BCD10FB14112E366AF02FC /* Pods-Virta-VirtaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9625A1482759AD550C798342F51F80C2 /* Pods-Virta-VirtaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7CAEB32CFBF7C021ACC628B5EA2C44F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19E3C59A59BFEEB660B73A9532FC5C5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1644A86963931A5D69A48D3A09595D3A;
+			remoteInfo = "Pods-Virta";
+		};
+		B5AABC4259132B1C2830123C56C72DF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF903DF43E111410ECA0C288D36FA21A;
+			remoteInfo = SwiftKeychainWrapper;
+		};
+		E6A0D4AD9C45313B04E22830299149B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF903DF43E111410ECA0C288D36FA21A;
+			remoteInfo = SwiftKeychainWrapper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B54ABB38552944A8A080832D76E3BC4 /* Pods-Virta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Virta.release.xcconfig"; sourceTree = "<group>"; };
+		0BF3F3376A11FFD890276B071566D1F9 /* Pods-Virta-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Virta-acknowledgements.plist"; sourceTree = "<group>"; };
+		0F5CFA060E5246AA37790CC36A29019E /* Pods-Virta-VirtaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Virta-VirtaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		10F2ACC662533285120E9FD73EE424EA /* Pods-Virta-VirtaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Virta-VirtaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		116F2772996FB11E9A7A85DA03D77B1C /* Pods-VirtaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VirtaTests-umbrella.h"; sourceTree = "<group>"; };
+		1F956CC19960F45AA2727F6A488970B2 /* SwiftKeychainWrapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftKeychainWrapper-umbrella.h"; sourceTree = "<group>"; };
+		221C02D57C482ED46B5CE4C786455E09 /* Pods-Virta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Virta.debug.xcconfig"; sourceTree = "<group>"; };
+		2B44AB6391E87647171BEBAFD8DD1A88 /* Pods_Virta_VirtaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Virta_VirtaUITests.framework; path = "Pods-Virta-VirtaUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3501FBB95B38B41BCD80600F235D4411 /* Pods-Virta-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Virta-frameworks.sh"; sourceTree = "<group>"; };
+		36063D2CA94ECD9075E4D037D8C1DD39 /* Pods-Virta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Virta.modulemap"; sourceTree = "<group>"; };
+		3ADB16F227146FC4C3762EEAAA13A74F /* SwiftKeychainWrapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftKeychainWrapper.modulemap; sourceTree = "<group>"; };
+		417172C867D63A9899AC0C3AE6ECEB8F /* Pods_VirtaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VirtaTests.framework; path = "Pods-VirtaTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		450D407495D4B279AB4054C48BB2DA08 /* SwiftKeychainWrapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftKeychainWrapper-prefix.pch"; sourceTree = "<group>"; };
+		5069D199AB328CCD047E61C632CD7C32 /* SwiftKeychainWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftKeychainWrapper.framework; path = SwiftKeychainWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		661B69BFDF97057833C9C68ACD0F64EF /* Pods-Virta-VirtaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Virta-VirtaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7D5E545B795DFCE3D82CC9120F482620 /* SwiftKeychainWrapper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftKeychainWrapper-Info.plist"; sourceTree = "<group>"; };
+		83BAEC212FFDDD320A3E7B41EAFACA89 /* Pods-VirtaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VirtaTests.release.xcconfig"; sourceTree = "<group>"; };
+		898B0B3F3AF8F5A98B8B24E61BF99B85 /* Pods-VirtaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VirtaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		90CBFBCAF92F5D829FBBCC0FFFB3C634 /* Pods-Virta-VirtaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Virta-VirtaUITests.modulemap"; sourceTree = "<group>"; };
+		9625A1482759AD550C798342F51F80C2 /* Pods-Virta-VirtaUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Virta-VirtaUITests-umbrella.h"; sourceTree = "<group>"; };
+		995A8465EDF7D2D92F0F56C96C7A63A6 /* KeychainWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainWrapper.swift; path = SwiftKeychainWrapper/KeychainWrapper.swift; sourceTree = "<group>"; };
+		9CE8A92C37B1074AA0C57711D3D378E7 /* Pods-Virta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Virta-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A25ADBDA73D17929384887FCE1885B88 /* Pods-Virta-VirtaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Virta-VirtaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A7DD9D1BB89F18CE55AB20372D6F4AE5 /* Pods-VirtaTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VirtaTests-Info.plist"; sourceTree = "<group>"; };
+		A7FD0F9480C23F429018CFDCE8A20DCD /* Pods-Virta-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Virta-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AA4E5644370D0B5F14E919FBBC4E2FD7 /* Pods-VirtaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VirtaTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AAA5BEDE4E62CADDC8AB587357310704 /* Pods-VirtaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VirtaTests.modulemap"; sourceTree = "<group>"; };
+		BD04F035F9F0F61FDFD6E4C01CF6A31D /* Pods-VirtaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VirtaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BDD82172753EA745211C9B31A54E6924 /* Pods-VirtaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VirtaTests-dummy.m"; sourceTree = "<group>"; };
+		C24F07E99DA23941811DF1CB6515CFF2 /* Pods-Virta-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Virta-Info.plist"; sourceTree = "<group>"; };
+		D47778ED5757DADA07DC1E501B7FF20C /* Pods-Virta-VirtaUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Virta-VirtaUITests-frameworks.sh"; sourceTree = "<group>"; };
+		D4BC9DDDD9BC5D02C4D21B79668A0142 /* Pods-Virta-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Virta-umbrella.h"; sourceTree = "<group>"; };
+		DA8FC32410D15B8DDD1C19F0D6707302 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainItemAccessibility.swift; path = SwiftKeychainWrapper/KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		DB549467E6FD510FF7333A68B62E920D /* Pods-Virta-VirtaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Virta-VirtaUITests-dummy.m"; sourceTree = "<group>"; };
+		DD47908E8393ACC68C10483D7143C15C /* SwiftKeychainWrapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftKeychainWrapper.xcconfig; sourceTree = "<group>"; };
+		E241273BAE3E42DBA5CE96CA53E41F1B /* SwiftKeychainWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftKeychainWrapper.h; path = SwiftKeychainWrapper/SwiftKeychainWrapper.h; sourceTree = "<group>"; };
+		E7DADBACD97D0C72778F39C4FB1ED34C /* SwiftKeychainWrapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftKeychainWrapper-dummy.m"; sourceTree = "<group>"; };
+		E83D9064D90E7B281A52AFB6600DC7D4 /* Pods-Virta-VirtaUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Virta-VirtaUITests-Info.plist"; sourceTree = "<group>"; };
+		E9E16850F7C813C9A55E34CBAE618D26 /* Pods_Virta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Virta.framework; path = "Pods-Virta.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A793BD1427A4B3E168013B82C9D2E07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				714B4B1282854FE3F409A1B9AC7F9621 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37CAA68AD1699CF5E9439D0AFCCF18D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7CAEB32CFBF7C021ACC628B5EA2C44F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A14C9B950F0A044661775B12D92E16DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D217AD072DD9C3A5F0630D7841C4A1F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D44BE32F0F2A099860CD3EA3E14F13E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35C7EB60E66E2814886504B822190484 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		309D448EF6C04FE1795CA1226F89E7D9 /* Pods-VirtaTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAA5BEDE4E62CADDC8AB587357310704 /* Pods-VirtaTests.modulemap */,
+				898B0B3F3AF8F5A98B8B24E61BF99B85 /* Pods-VirtaTests-acknowledgements.markdown */,
+				AA4E5644370D0B5F14E919FBBC4E2FD7 /* Pods-VirtaTests-acknowledgements.plist */,
+				BDD82172753EA745211C9B31A54E6924 /* Pods-VirtaTests-dummy.m */,
+				A7DD9D1BB89F18CE55AB20372D6F4AE5 /* Pods-VirtaTests-Info.plist */,
+				116F2772996FB11E9A7A85DA03D77B1C /* Pods-VirtaTests-umbrella.h */,
+				BD04F035F9F0F61FDFD6E4C01CF6A31D /* Pods-VirtaTests.debug.xcconfig */,
+				83BAEC212FFDDD320A3E7B41EAFACA89 /* Pods-VirtaTests.release.xcconfig */,
+			);
+			name = "Pods-VirtaTests";
+			path = "Target Support Files/Pods-VirtaTests";
+			sourceTree = "<group>";
+		};
+		3E34B5BF9E9C0627E10E03AB931875A9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C886F344905F4C6B3EAC33433BE8A090 /* Pods-Virta */,
+				D7E24C851550F9530135817C39886391 /* Pods-Virta-VirtaUITests */,
+				309D448EF6C04FE1795CA1226F89E7D9 /* Pods-VirtaTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		40792F9B25D0E190F4DD68BF40333F52 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3ADB16F227146FC4C3762EEAAA13A74F /* SwiftKeychainWrapper.modulemap */,
+				DD47908E8393ACC68C10483D7143C15C /* SwiftKeychainWrapper.xcconfig */,
+				E7DADBACD97D0C72778F39C4FB1ED34C /* SwiftKeychainWrapper-dummy.m */,
+				7D5E545B795DFCE3D82CC9120F482620 /* SwiftKeychainWrapper-Info.plist */,
+				450D407495D4B279AB4054C48BB2DA08 /* SwiftKeychainWrapper-prefix.pch */,
+				1F956CC19960F45AA2727F6A488970B2 /* SwiftKeychainWrapper-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftKeychainWrapper";
+			sourceTree = "<group>";
+		};
+		76AEF69DD48876F55AF12469FAA27994 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9E16850F7C813C9A55E34CBAE618D26 /* Pods_Virta.framework */,
+				2B44AB6391E87647171BEBAFD8DD1A88 /* Pods_Virta_VirtaUITests.framework */,
+				417172C867D63A9899AC0C3AE6ECEB8F /* Pods_VirtaTests.framework */,
+				5069D199AB328CCD047E61C632CD7C32 /* SwiftKeychainWrapper.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E7C18A276CC1B95B5DDB903FC2B8FAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8E157353417A2FDE103EADD8D1B8C29 /* SwiftKeychainWrapper */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A8E157353417A2FDE103EADD8D1B8C29 /* SwiftKeychainWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				DA8FC32410D15B8DDD1C19F0D6707302 /* KeychainItemAccessibility.swift */,
+				995A8465EDF7D2D92F0F56C96C7A63A6 /* KeychainWrapper.swift */,
+				E241273BAE3E42DBA5CE96CA53E41F1B /* SwiftKeychainWrapper.h */,
+				40792F9B25D0E190F4DD68BF40333F52 /* Support Files */,
+			);
+			name = SwiftKeychainWrapper;
+			path = SwiftKeychainWrapper;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C886F344905F4C6B3EAC33433BE8A090 /* Pods-Virta */ = {
+			isa = PBXGroup;
+			children = (
+				36063D2CA94ECD9075E4D037D8C1DD39 /* Pods-Virta.modulemap */,
+				A7FD0F9480C23F429018CFDCE8A20DCD /* Pods-Virta-acknowledgements.markdown */,
+				0BF3F3376A11FFD890276B071566D1F9 /* Pods-Virta-acknowledgements.plist */,
+				9CE8A92C37B1074AA0C57711D3D378E7 /* Pods-Virta-dummy.m */,
+				3501FBB95B38B41BCD80600F235D4411 /* Pods-Virta-frameworks.sh */,
+				C24F07E99DA23941811DF1CB6515CFF2 /* Pods-Virta-Info.plist */,
+				D4BC9DDDD9BC5D02C4D21B79668A0142 /* Pods-Virta-umbrella.h */,
+				221C02D57C482ED46B5CE4C786455E09 /* Pods-Virta.debug.xcconfig */,
+				0B54ABB38552944A8A080832D76E3BC4 /* Pods-Virta.release.xcconfig */,
+			);
+			name = "Pods-Virta";
+			path = "Target Support Files/Pods-Virta";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				8E7C18A276CC1B95B5DDB903FC2B8FAD /* Pods */,
+				76AEF69DD48876F55AF12469FAA27994 /* Products */,
+				3E34B5BF9E9C0627E10E03AB931875A9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7E24C851550F9530135817C39886391 /* Pods-Virta-VirtaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				90CBFBCAF92F5D829FBBCC0FFFB3C634 /* Pods-Virta-VirtaUITests.modulemap */,
+				0F5CFA060E5246AA37790CC36A29019E /* Pods-Virta-VirtaUITests-acknowledgements.markdown */,
+				A25ADBDA73D17929384887FCE1885B88 /* Pods-Virta-VirtaUITests-acknowledgements.plist */,
+				DB549467E6FD510FF7333A68B62E920D /* Pods-Virta-VirtaUITests-dummy.m */,
+				D47778ED5757DADA07DC1E501B7FF20C /* Pods-Virta-VirtaUITests-frameworks.sh */,
+				E83D9064D90E7B281A52AFB6600DC7D4 /* Pods-Virta-VirtaUITests-Info.plist */,
+				9625A1482759AD550C798342F51F80C2 /* Pods-Virta-VirtaUITests-umbrella.h */,
+				10F2ACC662533285120E9FD73EE424EA /* Pods-Virta-VirtaUITests.debug.xcconfig */,
+				661B69BFDF97057833C9C68ACD0F64EF /* Pods-Virta-VirtaUITests.release.xcconfig */,
+			);
+			name = "Pods-Virta-VirtaUITests";
+			path = "Target Support Files/Pods-Virta-VirtaUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1BA6BEF52FB9A830186E93190AA4DE0C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B881314801741FD14EB1BE691B9E44 /* Pods-VirtaTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33E347E52AC33CEE1E1D07EFBDB2CC01 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1D9361368BCD10FB14112E366AF02FC /* Pods-Virta-VirtaUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E437ACF2E1CBD9DC1D4A713E9CA4F22 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A96C9A9F5221227C8FDF7810C6CC0196 /* Pods-Virta-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E46D83F0CD00CB6C581A15FACBBDB57E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A1E9D786CA1040C50244F3427482C2C /* SwiftKeychainWrapper-umbrella.h in Headers */,
+				7BDEA58982AE38EC64F549D981FD45E6 /* SwiftKeychainWrapper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		15EEA95C06BCF10493EF61BF782EF70E /* Pods-VirtaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 025507AFF181A8B91F13F04327ACDBE6 /* Build configuration list for PBXNativeTarget "Pods-VirtaTests" */;
+			buildPhases = (
+				1BA6BEF52FB9A830186E93190AA4DE0C /* Headers */,
+				66E78D1979A0F9617F8D7826CAA81781 /* Sources */,
+				A14C9B950F0A044661775B12D92E16DF /* Frameworks */,
+				442CF37559B8BA6CED335DA6E5E73200 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9EAAED6CB27EE76DC3F92B32FAC6811 /* PBXTargetDependency */,
+			);
+			name = "Pods-VirtaTests";
+			productName = "Pods-VirtaTests";
+			productReference = 417172C867D63A9899AC0C3AE6ECEB8F /* Pods_VirtaTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1644A86963931A5D69A48D3A09595D3A /* Pods-Virta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C11D5793C0C4A857515E336D0D3999C /* Build configuration list for PBXNativeTarget "Pods-Virta" */;
+			buildPhases = (
+				3E437ACF2E1CBD9DC1D4A713E9CA4F22 /* Headers */,
+				750236E2962560B59D304C7C924A3772 /* Sources */,
+				37CAA68AD1699CF5E9439D0AFCCF18D3 /* Frameworks */,
+				B3D1704713FCE5C38E4B0C36ABF5653A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFB0EDB7B9195B509CDF58490D7CA921 /* PBXTargetDependency */,
+			);
+			name = "Pods-Virta";
+			productName = "Pods-Virta";
+			productReference = E9E16850F7C813C9A55E34CBAE618D26 /* Pods_Virta.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B112CB67B50028C8C545A8EFC30436E0 /* Pods-Virta-VirtaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBD53336EE42633B12833F11848AAA6F /* Build configuration list for PBXNativeTarget "Pods-Virta-VirtaUITests" */;
+			buildPhases = (
+				33E347E52AC33CEE1E1D07EFBDB2CC01 /* Headers */,
+				019A41543C145380B6ECB8E8761A1D3C /* Sources */,
+				0A793BD1427A4B3E168013B82C9D2E07 /* Frameworks */,
+				6BCD6A73759494F35299F623853C61CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F2E1DAB72ED44FAC90631088CC110B0 /* PBXTargetDependency */,
+			);
+			name = "Pods-Virta-VirtaUITests";
+			productName = "Pods-Virta-VirtaUITests";
+			productReference = 2B44AB6391E87647171BEBAFD8DD1A88 /* Pods_Virta_VirtaUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CF903DF43E111410ECA0C288D36FA21A /* SwiftKeychainWrapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97C26D1F56B79A699BC4DE26433A422F /* Build configuration list for PBXNativeTarget "SwiftKeychainWrapper" */;
+			buildPhases = (
+				E46D83F0CD00CB6C581A15FACBBDB57E /* Headers */,
+				330DE2BD20DFC08839359EADFE5BBCF0 /* Sources */,
+				D44BE32F0F2A099860CD3EA3E14F13E2 /* Frameworks */,
+				BBE4D27BCC51B5E2A3D3C5FFE924AA40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftKeychainWrapper;
+			productName = SwiftKeychainWrapper;
+			productReference = 5069D199AB328CCD047E61C632CD7C32 /* SwiftKeychainWrapper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 76AEF69DD48876F55AF12469FAA27994 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1644A86963931A5D69A48D3A09595D3A /* Pods-Virta */,
+				B112CB67B50028C8C545A8EFC30436E0 /* Pods-Virta-VirtaUITests */,
+				15EEA95C06BCF10493EF61BF782EF70E /* Pods-VirtaTests */,
+				CF903DF43E111410ECA0C288D36FA21A /* SwiftKeychainWrapper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		442CF37559B8BA6CED335DA6E5E73200 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BCD6A73759494F35299F623853C61CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3D1704713FCE5C38E4B0C36ABF5653A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBE4D27BCC51B5E2A3D3C5FFE924AA40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		019A41543C145380B6ECB8E8761A1D3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26712592A92EC613BBFAB9237DA46E92 /* Pods-Virta-VirtaUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		330DE2BD20DFC08839359EADFE5BBCF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				853500B973255E0957451456FAAD6E31 /* KeychainItemAccessibility.swift in Sources */,
+				3A246CB408E326D4798A114169A4D9E3 /* KeychainWrapper.swift in Sources */,
+				1BB72D35C1614D5955F927774DCC7C44 /* SwiftKeychainWrapper-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66E78D1979A0F9617F8D7826CAA81781 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ACEDBB8A750BFB658C8E4CD4DC04056 /* Pods-VirtaTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		750236E2962560B59D304C7C924A3772 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				725690EFFAEF9F56C09BD1A592944091 /* Pods-Virta-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F2E1DAB72ED44FAC90631088CC110B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftKeychainWrapper;
+			target = CF903DF43E111410ECA0C288D36FA21A /* SwiftKeychainWrapper */;
+			targetProxy = B5AABC4259132B1C2830123C56C72DF4 /* PBXContainerItemProxy */;
+		};
+		B9EAAED6CB27EE76DC3F92B32FAC6811 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Virta";
+			target = 1644A86963931A5D69A48D3A09595D3A /* Pods-Virta */;
+			targetProxy = 19E3C59A59BFEEB660B73A9532FC5C5C /* PBXContainerItemProxy */;
+		};
+		BFB0EDB7B9195B509CDF58490D7CA921 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftKeychainWrapper;
+			target = CF903DF43E111410ECA0C288D36FA21A /* SwiftKeychainWrapper */;
+			targetProxy = E6A0D4AD9C45313B04E22830299149B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0D68731B1708A659462C629F01084692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD47908E8393ACC68C10483D7143C15C /* SwiftKeychainWrapper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper.modulemap";
+				PRODUCT_MODULE_NAME = SwiftKeychainWrapper;
+				PRODUCT_NAME = SwiftKeychainWrapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1036A65AB327CF0BCA827259BF289BD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10F2ACC662533285120E9FD73EE424EA /* Pods-Virta-VirtaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Virta-VirtaUITests/Pods-Virta-VirtaUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Virta-VirtaUITests/Pods-Virta-VirtaUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		43CE06E37A8B99DB615367984EBD4567 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD47908E8393ACC68C10483D7143C15C /* SwiftKeychainWrapper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper.modulemap";
+				PRODUCT_MODULE_NAME = SwiftKeychainWrapper;
+				PRODUCT_NAME = SwiftKeychainWrapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		58D2B60490A88BA5BFA46A941B3EBE5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD04F035F9F0F61FDFD6E4C01CF6A31D /* Pods-VirtaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VirtaTests/Pods-VirtaTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VirtaTests/Pods-VirtaTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6C61D818ACD3C2C116FED6A9C67E91B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7D0B919484B47E23F2292FDFB1F92322 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 221C02D57C482ED46B5CE4C786455E09 /* Pods-Virta.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Virta/Pods-Virta-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Virta/Pods-Virta.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7DC5F11AFBEAE473E8D3C24A2D11338D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B63D9A495744F311418A16AEC6CCBDAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 661B69BFDF97057833C9C68ACD0F64EF /* Pods-Virta-VirtaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Virta-VirtaUITests/Pods-Virta-VirtaUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Virta-VirtaUITests/Pods-Virta-VirtaUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C1B152E12B7A5E236F1C4A99887B5CD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83BAEC212FFDDD320A3E7B41EAFACA89 /* Pods-VirtaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VirtaTests/Pods-VirtaTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VirtaTests/Pods-VirtaTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DF494B4FDEBF17B1F41419B092DFDE2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B54ABB38552944A8A080832D76E3BC4 /* Pods-Virta.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Virta/Pods-Virta-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Virta/Pods-Virta.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		025507AFF181A8B91F13F04327ACDBE6 /* Build configuration list for PBXNativeTarget "Pods-VirtaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58D2B60490A88BA5BFA46A941B3EBE5B /* Debug */,
+				C1B152E12B7A5E236F1C4A99887B5CD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C11D5793C0C4A857515E336D0D3999C /* Build configuration list for PBXNativeTarget "Pods-Virta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D0B919484B47E23F2292FDFB1F92322 /* Debug */,
+				DF494B4FDEBF17B1F41419B092DFDE2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C61D818ACD3C2C116FED6A9C67E91B4 /* Debug */,
+				7DC5F11AFBEAE473E8D3C24A2D11338D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97C26D1F56B79A699BC4DE26433A422F /* Build configuration list for PBXNativeTarget "SwiftKeychainWrapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D68731B1708A659462C629F01084692 /* Debug */,
+				43CE06E37A8B99DB615367984EBD4567 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBD53336EE42633B12833F11848AAA6F /* Build configuration list for PBXNativeTarget "Pods-Virta-VirtaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1036A65AB327CF0BCA827259BF289BD7 /* Debug */,
+				B63D9A495744F311418A16AEC6CCBDAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
