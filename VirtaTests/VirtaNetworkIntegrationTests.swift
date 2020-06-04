@@ -47,13 +47,13 @@ class VirtaNetworkIntegrationTests: XCTestCase {
         
         let expectation = self.expectation(description: "stationsList")
 
-        var expected = [BasicStationInfo]()
+        var received = [BasicStationInfo]()
         
         // location: 60.2, 24.7
-        stationRequest.getStations(latMin: 50.1, latMax: 60.3, longMin: 14.6, longMax: 24.8) { result in
+        stationRequest.getStations(latMin: 50.1, latMax: 70.3, longMin: 14.6, longMax: 34.8) { result in
             switch result {
             case .success(let data):
-                expected = data
+                received = data
             case .failure(let error):
                 print(error)
             }
@@ -63,7 +63,7 @@ class VirtaNetworkIntegrationTests: XCTestCase {
         waitForExpectations(timeout: 10, handler: nil)
         
         // check the token is not empty
-        XCTAssertEqual(expected.count, 7)
+        XCTAssertEqual(received.count, 10)
 
         // ID = 8957
         //XCTAssertEqual(expected[0].name, "Hardy Barth Integration Test")

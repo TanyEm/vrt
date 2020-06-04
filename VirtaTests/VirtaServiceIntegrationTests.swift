@@ -52,5 +52,22 @@ class VirtaServiceIntegrationTests: XCTestCase {
         
         XCTAssertEqual(expected, received)
     }
+    
+    func testStationsServiceGetStationsSuccess() throws {
+        let stationService = StationListService()
+        
+        let expectation = self.expectation(description: "stationServiceGetStationsListSuccess")
+        
+        var received = [BasicStationInfo]()
 
+        stationService.getStationList() { (listed) in
+            received = listed
+            expectation.fulfill()
+        }
+        waitForExpectations(timeout: 10, handler: nil)
+        
+        XCTAssertEqual(received.count, 10)
+        
+    }
+    
 }

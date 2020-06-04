@@ -32,7 +32,7 @@ struct StationRequest {
             stationSession.dataTask(with: request) { (data, res, err) in
                 
                 if let response = res as? HTTPURLResponse, let unwrappedData = data {
-                    
+                    print(String(data: unwrappedData, encoding: .utf8))
                     let result = HTTPNetworkResponse.handleNetworkResponse(for: response)
                     switch result {
                 
