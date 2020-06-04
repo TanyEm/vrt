@@ -16,7 +16,7 @@ class AuthService {
         authRequest.getAuth(email: email, password: password) { result in
             switch result {
             case .success(let authToken):
-                let tokenSaved: Bool = KeychainWrapper.standard.set("token", forKey: authToken.token)
+                let tokenSaved: Bool = KeychainWrapper.standard.set(authToken.token, forKey: "token")
 
                 if tokenSaved {
                     authorized(true)

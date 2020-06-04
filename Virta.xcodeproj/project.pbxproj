@@ -21,7 +21,7 @@
 		737822A224714949009091DE /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737822A124714949009091DE /* Auth.swift */; };
 		73AB3BD124702A030050C676 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB3BD024702A030050C676 /* AppDelegate.swift */; };
 		73AB3BD324702A030050C676 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB3BD224702A030050C676 /* SceneDelegate.swift */; };
-		73AB3BD524702A030050C676 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB3BD424702A030050C676 /* ViewController.swift */; };
+		73AB3BD524702A030050C676 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB3BD424702A030050C676 /* LoginViewController.swift */; };
 		73AB3BD824702A030050C676 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73AB3BD624702A030050C676 /* Main.storyboard */; };
 		73AB3BDA24702A090050C676 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73AB3BD924702A090050C676 /* Assets.xcassets */; };
 		73AB3BDD24702A090050C676 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73AB3BDB24702A090050C676 /* LaunchScreen.storyboard */; };
@@ -35,6 +35,7 @@
 		73AB3C11247065260050C676 /* Pricing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB3C10247065260050C676 /* Pricing.swift */; };
 		73F7B47F2472133000FB4E11 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F7B47E2472133000FB4E11 /* AuthService.swift */; };
 		73F7B4832472215600FB4E11 /* VirtaServiceIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F7B4822472215600FB4E11 /* VirtaServiceIntegrationTests.swift */; };
+		73F7B4852472876600FB4E11 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F7B4842472876600FB4E11 /* LoginViewModel.swift */; };
 		FC6AD4978589766D3F944144 /* Pods_VirtaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011E52098C94C5AEAFB990C0 /* Pods_VirtaTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,7 +75,7 @@
 		73AB3BCD24702A030050C676 /* Virta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Virta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73AB3BD024702A030050C676 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73AB3BD224702A030050C676 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		73AB3BD424702A030050C676 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		73AB3BD424702A030050C676 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		73AB3BD724702A030050C676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73AB3BD924702A090050C676 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73AB3BDC24702A090050C676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -93,6 +94,7 @@
 		73AB3C10247065260050C676 /* Pricing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pricing.swift; sourceTree = "<group>"; };
 		73F7B47E2472133000FB4E11 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		73F7B4822472215600FB4E11 /* VirtaServiceIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtaServiceIntegrationTests.swift; sourceTree = "<group>"; };
+		73F7B4842472876600FB4E11 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		852B4746EC6D7AF7256AAF3B /* Pods_Virta_VirtaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Virta_VirtaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		956C8B438775CDE946BECF47 /* Pods-Virta-VirtaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Virta-VirtaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Virta-VirtaUITests/Pods-Virta-VirtaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A81E454CD07C8B11BF3FD4E1 /* Pods-Virta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Virta.release.xcconfig"; path = "Target Support Files/Pods-Virta/Pods-Virta.release.xcconfig"; sourceTree = "<group>"; };
@@ -192,17 +194,15 @@
 		73AB3BCF24702A030050C676 /* Virta */ = {
 			isa = PBXGroup;
 			children = (
+				73AB3BDE24702A090050C676 /* Info.plist */,
+				73F7B48724728CEA00FB4E11 /* Delegates */,
+				73F7B48824728D3900FB4E11 /* Resources */,
 				73F7B47D247212A600FB4E11 /* Services */,
 				73AB3C0324702CA50050C676 /* Networking */,
 				73AB3C0224702C8F0050C676 /* ViewModels */,
 				73AB3C0124702C2F0050C676 /* Controllers */,
+				73F7B48624728CAB00FB4E11 /* Views */,
 				73AB3C0024702BDB0050C676 /* Models */,
-				73AB3BD024702A030050C676 /* AppDelegate.swift */,
-				73AB3BD224702A030050C676 /* SceneDelegate.swift */,
-				73AB3BD624702A030050C676 /* Main.storyboard */,
-				73AB3BD924702A090050C676 /* Assets.xcassets */,
-				73AB3BDB24702A090050C676 /* LaunchScreen.storyboard */,
-				73AB3BDE24702A090050C676 /* Info.plist */,
 			);
 			path = Virta;
 			sourceTree = "<group>";
@@ -243,7 +243,7 @@
 		73AB3C0124702C2F0050C676 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				73AB3BD424702A030050C676 /* ViewController.swift */,
+				73AB3BD424702A030050C676 /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -251,6 +251,7 @@
 		73AB3C0224702C8F0050C676 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				73F7B4842472876600FB4E11 /* LoginViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -271,6 +272,32 @@
 				73F7B47E2472133000FB4E11 /* AuthService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		73F7B48624728CAB00FB4E11 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				73AB3BD624702A030050C676 /* Main.storyboard */,
+				73AB3BDB24702A090050C676 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		73F7B48724728CEA00FB4E11 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				73AB3BD024702A030050C676 /* AppDelegate.swift */,
+				73AB3BD224702A030050C676 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		73F7B48824728D3900FB4E11 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				73AB3BD924702A090050C676 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		82B71F86393D56697983C789 /* Pods */ = {
@@ -531,7 +558,7 @@
 				73AB3C0D247061D20050C676 /* ConnectorType.swift in Sources */,
 				7378229E247145F1009091DE /* AuthRequest.swift in Sources */,
 				737822A224714949009091DE /* Auth.swift in Sources */,
-				73AB3BD524702A030050C676 /* ViewController.swift in Sources */,
+				73AB3BD524702A030050C676 /* LoginViewController.swift in Sources */,
 				73F7B47F2472133000FB4E11 /* AuthService.swift in Sources */,
 				737822A024714673009091DE /* StationRequest.swift in Sources */,
 				7378228E2470A54C009091DE /* HTTPMethod.swift in Sources */,
@@ -545,6 +572,7 @@
 				73AB3C0B247061640050C676 /* Connector.swift in Sources */,
 				73AB3BD324702A030050C676 /* SceneDelegate.swift in Sources */,
 				73AB3C0924703F500050C676 /* Station.swift in Sources */,
+				73F7B4852472876600FB4E11 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -75,14 +75,12 @@ class VirtaNetworkIntegrationTests: XCTestCase {
         let expectation = self.expectation(description: "stationDescription")
         
         var expectedID = Int()
-        var expectedName = String()
         
         // ID = 8957
         stationRequest.getStationByID(id: 8957) { (result) in
             switch result {
             case .success(let data):
                 expectedID = data.id!
-                expectedName = data.name!
             case .failure(let error):
                 print(error)
             }
