@@ -36,7 +36,7 @@
 		73F7B47F2472133000FB4E11 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F7B47E2472133000FB4E11 /* AuthService.swift */; };
 		73F7B4832472215600FB4E11 /* VirtaServiceIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F7B4822472215600FB4E11 /* VirtaServiceIntegrationTests.swift */; };
 		73F7B4852472876600FB4E11 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F7B4842472876600FB4E11 /* LoginViewModel.swift */; };
-		73F7B48C2472FB9F00FB4E11 /* StationListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F7B48B2472FB9F00FB4E11 /* StationListService.swift */; };
+		73F7B48C2472FB9F00FB4E11 /* StationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F7B48B2472FB9F00FB4E11 /* StationService.swift */; };
 		FC6AD4978589766D3F944144 /* Pods_VirtaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011E52098C94C5AEAFB990C0 /* Pods_VirtaTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,7 +96,7 @@
 		73F7B47E2472133000FB4E11 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		73F7B4822472215600FB4E11 /* VirtaServiceIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtaServiceIntegrationTests.swift; sourceTree = "<group>"; };
 		73F7B4842472876600FB4E11 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		73F7B48B2472FB9F00FB4E11 /* StationListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListService.swift; sourceTree = "<group>"; };
+		73F7B48B2472FB9F00FB4E11 /* StationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationService.swift; sourceTree = "<group>"; };
 		852B4746EC6D7AF7256AAF3B /* Pods_Virta_VirtaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Virta_VirtaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		956C8B438775CDE946BECF47 /* Pods-Virta-VirtaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Virta-VirtaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Virta-VirtaUITests/Pods-Virta-VirtaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A81E454CD07C8B11BF3FD4E1 /* Pods-Virta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Virta.release.xcconfig"; path = "Target Support Files/Pods-Virta/Pods-Virta.release.xcconfig"; sourceTree = "<group>"; };
@@ -272,7 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				73F7B47E2472133000FB4E11 /* AuthService.swift */,
-				73F7B48B2472FB9F00FB4E11 /* StationListService.swift */,
+				73F7B48B2472FB9F00FB4E11 /* StationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -567,7 +567,7 @@
 				7378228E2470A54C009091DE /* HTTPMethod.swift in Sources */,
 				737822982470B111009091DE /* Result.swift in Sources */,
 				73AB3C11247065260050C676 /* Pricing.swift in Sources */,
-				73F7B48C2472FB9F00FB4E11 /* StationListService.swift in Sources */,
+				73F7B48C2472FB9F00FB4E11 /* StationService.swift in Sources */,
 				73AB3C07247037940050C676 /* BasicStationInfo.swift in Sources */,
 				7378228C2470A32B009091DE /* HTTPNetworkRoute.swift in Sources */,
 				73AB3BD124702A030050C676 /* AppDelegate.swift in Sources */,

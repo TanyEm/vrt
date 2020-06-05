@@ -8,7 +8,7 @@
 
 import Foundation
 
-class StationListService {
+class StationService {
     // location: 60.2, 24.7
     let latMin = 50.1
     let latMax = 70.3
@@ -24,6 +24,19 @@ class StationListService {
                 listed(data)
             case .failure(let error):
                 print("Error: failed to get stations list \(error)")
+            }
+        }
+    }
+    
+    func getStationByID(id: Int, _ viewed: @escaping (Station) -> ()) {
+        let stationRequest = StationRequest()
+        
+        stationRequest.getStationByID(id: id) { (result) in
+            switch result {
+            case .success(let station):
+                viewed(station)
+            case .failure(let error):
+                print("Error: failed to get station by id:\(id); error: \(error)")
             }
         }
     }
