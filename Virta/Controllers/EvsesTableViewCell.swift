@@ -37,12 +37,12 @@ class EvsesTableViewCell: UITableViewCell, UICollectionViewDataSource, UICollect
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return 4
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = evsesCollectionView.dequeueReusableCell(withReuseIdentifier: "EvseCollectionViewCell", for: indexPath) as! EvseCollectionViewCell
-        cell.id.text = "2010"//vehicle.included[indexPath.item]
+        cell.id.text = "2020"//vehicle.included[indexPath.item]
         return cell
     }
     
