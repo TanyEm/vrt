@@ -60,13 +60,18 @@ struct StationRequest {
             stationSession.dataTask(with: request) { (data, res, err) in
                 
                 if let response = res as? HTTPURLResponse, let unwrappedData = data {
-                    
+                    print(String(data: unwrappedData, encoding: .utf8))
                     let result = HTTPNetworkResponse.handleNetworkResponse(for: response)
                     switch result {
                 
                     case .success:
-                        let result = try? JSONDecoder().decode(Station.self, from: unwrappedData)
-                        completion(Result.success(result!))
+                        do {
+                            let result = try JSONDecoder().decode(Station.self, from: unwrappedData)
+                            completion(Result.success(result))
+                        } catch let jsonError {
+                            print("JSON PARSE")
+                            print(jsonError)
+                        }
                     case .failure:
                         completion(Result.failure(HTTPNetworkError.decodingFailed))
                     }

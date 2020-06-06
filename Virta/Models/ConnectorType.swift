@@ -14,5 +14,6 @@ enum ConnectorType: String, Codable {
     case type2 = "Type2"
     case type3 = "Type3"
     case shuko = "Shuko"
+    case schuko = "Schuko"
     case mennekes = "Mennekes"
 }

@@ -18,9 +18,9 @@ struct Connector: Codable {
     let connectorID: Int?
     let type: ConnectorType?
     let currentType: CurrentType?
-    let maxKw: Int?
+    let maxKw: Double?
     
-    init(connectorID: Int?, type: ConnectorType?, currentType: CurrentType?, maxKw: Int?) {
+    init(connectorID: Int?, type: ConnectorType?, currentType: CurrentType?, maxKw: Double?) {
         self.connectorID = connectorID
         self.type = type
         self.currentType = currentType
