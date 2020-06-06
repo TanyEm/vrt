@@ -39,9 +39,23 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         viewModel.login(email: emailField.text!, password: passwordField.text!) { loginResult in
             if loginResult == true {
                 print("logged in")
-                let retrievedString: String? = KeychainWrapper.standard.string(forKey: "token")
-                print(retrievedString)
-                
+                DispatchQueue.main.async {
+                    
+                    let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                    let navigationController = storyBoard.instantiateViewController(withIdentifier: "StationsListNavControllerIdentifier") as! UINavigationController
+
+                    navigationController.modalPresentationStyle = .fullScreen
+                    navigationController.modalTransitionStyle = .crossDissolve
+                    
+                    let viewController = storyBoard.instantiateViewController(withIdentifier: "StationsListViewController") as! StationsListTableViewController
+                    
+                    viewController.modalPresentationStyle = .fullScreen
+                    viewController.modalTransitionStyle = .crossDissolve
+                    
+                    navigationController.pushViewController(viewController, animated: false)
+                    
+                    self.present(navigationController, animated:true, completion:nil)
+                }
             } else {
                 self.displayMassage(userMassage: "Invalid credentials")
             }

@@ -37,6 +37,9 @@
 		73F7B4832472215600FB4E11 /* VirtaServiceIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F7B4822472215600FB4E11 /* VirtaServiceIntegrationTests.swift */; };
 		73F7B4852472876600FB4E11 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F7B4842472876600FB4E11 /* LoginViewModel.swift */; };
 		73F7B48C2472FB9F00FB4E11 /* StationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F7B48B2472FB9F00FB4E11 /* StationService.swift */; };
+		73F7B48E24732D3900FB4E11 /* StationsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F7B48D24732D3900FB4E11 /* StationsListViewModel.swift */; };
+		73F7B49024733B4100FB4E11 /* StationsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F7B48F24733B4100FB4E11 /* StationsListTableViewController.swift */; };
+		73F7B4922473588A00FB4E11 /* StationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F7B4912473588A00FB4E11 /* StationTableViewCell.swift */; };
 		FC6AD4978589766D3F944144 /* Pods_VirtaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011E52098C94C5AEAFB990C0 /* Pods_VirtaTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +100,9 @@
 		73F7B4822472215600FB4E11 /* VirtaServiceIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtaServiceIntegrationTests.swift; sourceTree = "<group>"; };
 		73F7B4842472876600FB4E11 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		73F7B48B2472FB9F00FB4E11 /* StationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationService.swift; sourceTree = "<group>"; };
+		73F7B48D24732D3900FB4E11 /* StationsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsListViewModel.swift; sourceTree = "<group>"; };
+		73F7B48F24733B4100FB4E11 /* StationsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsListTableViewController.swift; sourceTree = "<group>"; };
+		73F7B4912473588A00FB4E11 /* StationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTableViewCell.swift; sourceTree = "<group>"; };
 		852B4746EC6D7AF7256AAF3B /* Pods_Virta_VirtaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Virta_VirtaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		956C8B438775CDE946BECF47 /* Pods-Virta-VirtaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Virta-VirtaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Virta-VirtaUITests/Pods-Virta-VirtaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A81E454CD07C8B11BF3FD4E1 /* Pods-Virta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Virta.release.xcconfig"; path = "Target Support Files/Pods-Virta/Pods-Virta.release.xcconfig"; sourceTree = "<group>"; };
@@ -246,6 +252,8 @@
 			isa = PBXGroup;
 			children = (
 				73AB3BD424702A030050C676 /* LoginViewController.swift */,
+				73F7B48F24733B4100FB4E11 /* StationsListTableViewController.swift */,
+				73F7B4912473588A00FB4E11 /* StationTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -254,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				73F7B4842472876600FB4E11 /* LoginViewModel.swift */,
+				73F7B48D24732D3900FB4E11 /* StationsListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -563,6 +572,7 @@
 				737822A224714949009091DE /* Auth.swift in Sources */,
 				73AB3BD524702A030050C676 /* LoginViewController.swift in Sources */,
 				73F7B47F2472133000FB4E11 /* AuthService.swift in Sources */,
+				73F7B49024733B4100FB4E11 /* StationsListTableViewController.swift in Sources */,
 				737822A024714673009091DE /* StationRequest.swift in Sources */,
 				7378228E2470A54C009091DE /* HTTPMethod.swift in Sources */,
 				737822982470B111009091DE /* Result.swift in Sources */,
@@ -572,6 +582,8 @@
 				7378228C2470A32B009091DE /* HTTPNetworkRoute.swift in Sources */,
 				73AB3BD124702A030050C676 /* AppDelegate.swift in Sources */,
 				737822942470AD67009091DE /* HTTPNetworkResponse.swift in Sources */,
+				73F7B4922473588A00FB4E11 /* StationTableViewCell.swift in Sources */,
+				73F7B48E24732D3900FB4E11 /* StationsListViewModel.swift in Sources */,
 				737822922470A8B0009091DE /* HTTPNetworkRequest.swift in Sources */,
 				73AB3C0B247061640050C676 /* Connector.swift in Sources */,
 				73AB3BD324702A030050C676 /* SceneDelegate.swift in Sources */,

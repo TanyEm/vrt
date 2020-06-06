@@ -10,27 +10,18 @@ import Foundation
 import UIKit
 
 public class LoginViewModel {
-    
-    // MARK: - Properties
-    
+        
     private let service: AuthService
     
     var loginButton: Bool?
-    
     
     init() {
         self.service = AuthService()
     }
     
     func login(email: String, password: String, _ loggedIn: @escaping (Bool) -> ()) {
-        
-        
         service.auth(email: email, password: password) { (autorized) in
             loggedIn(autorized)
         }
     }
-    
-    
-    
-    
 }
