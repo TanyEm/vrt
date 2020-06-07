@@ -13,6 +13,8 @@ class StationDetailsTableViewController: UITableViewController {
     private let viewModel = StationDetailsViewModel()
     private var stationDetail: Station? = nil
     var selectedStationID: Int?
+    var evsesList = [EVSE]()
+    
 
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var address: UILabel!
@@ -34,11 +36,18 @@ class StationDetailsTableViewController: UITableViewController {
             DispatchQueue.main.async {
                 print(result)
                 self.stationDetail = result
+                
+                guard let evses = result.evses else { return }
+                self.evsesList = evses
+                
                 self.name.text = self.stationDetail?.name
                 self.address.text = self.stationDetail?.address
                 self.provider.text = self.stationDetail?.provider
-                print("name1: \(String(describing: self.name.text))")
                 self.tableView.reloadData()
+                let idx = IndexPath(item: 1, section: 0)
+                let cell = self.tableView.dequeueReusableCell(withIdentifier: "evsesTableViewCell", for: idx) as! EvsesTableViewCell
+                cell.stationDetailsTableViewController = self
+                cell.evsesCollectionView.reloadSections(IndexSet(integer: 0))
             }
         }
     }

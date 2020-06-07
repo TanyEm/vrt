@@ -13,6 +13,8 @@ class EvsesTableViewCell: UITableViewCell, UICollectionViewDataSource, UICollect
     @IBOutlet weak var evsesCollectionView: UICollectionView!
     @IBOutlet weak var evsesCollectionViewHeightConstraint: NSLayoutConstraint!
     
+    var stationDetailsTableViewController: StationDetailsTableViewController?
+    
     var collectionViewObserver: NSKeyValueObservation?
 
     override func awakeFromNib() {
@@ -37,12 +39,18 @@ class EvsesTableViewCell: UITableViewCell, UICollectionViewDataSource, UICollect
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        guard let count = self.stationDetailsTableViewController?.evsesList.count else { return 0 }
+        return count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = evsesCollectionView.dequeueReusableCell(withReuseIdentifier: "EvseCollectionViewCell", for: indexPath) as! EvseCollectionViewCell
-        cell.id.text = "2020"//vehicle.included[indexPath.item]
+        
+        guard let id = self.stationDetailsTableViewController?.evsesList[indexPath.row].id else {
+            cell.id.text = ""
+            return cell
+        }
+        cell.id.text = String("\(id)")
         return cell
     }
     
