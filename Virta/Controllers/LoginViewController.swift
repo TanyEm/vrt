@@ -39,6 +39,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         viewModel.login(email: emailField.text!, password: passwordField.text!) { loginResult in
             if loginResult == true {
                 print("logged in")
+                let retrievedString: String? = KeychainWrapper.standard.string(forKey: "token")
+                print("token: \(retrievedString)")
                 DispatchQueue.main.async {
                     
                     let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)

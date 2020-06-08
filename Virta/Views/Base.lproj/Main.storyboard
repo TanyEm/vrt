@@ -102,7 +102,7 @@
             </objects>
             <point key="canvasLocation" x="100" y="86"/>
         </scene>
-        <!--Stations List Table View Controller-->
+        <!--Nearby-->
         <scene sceneID="Wgj-Ff-AAk">
             <objects>
                 <tableViewController storyboardIdentifier="StationsListViewController" id="UjM-Qe-YN9" customClass="StationsListTableViewController" customModule="Virta" customModuleProvider="target" sceneMemberID="viewController">
@@ -110,16 +110,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="hhN-IB-WYn">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <items>
+                                <navigationItem title="Nearby" id="o9b-FI-zNu"/>
+                            </items>
+                        </navigationBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="stationCell" rowHeight="132" id="V2c-Tp-x1s" customClass="StationTableViewCell" customModule="Virta" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="132"/>
+                                <rect key="frame" x="0.0" y="72" width="414" height="132"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="V2c-Tp-x1s" id="sDu-Jz-B2C">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="StationName" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZq-Gj-Vhu">
-                                            <rect key="frame" x="36" y="22" width="240" height="20"/>
+                                            <rect key="frame" x="20" y="22" width="256" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="0J9-UI-bnV"/>
                                                 <constraint firstAttribute="height" constant="20" id="ETU-08-KFM"/>
@@ -129,7 +137,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2c-Xi-REL">
-                                            <rect key="frame" x="36" y="42" width="66.5" height="18"/>
+                                            <rect key="frame" x="20" y="42" width="66.5" height="18"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="18" id="Aw0-MC-hBL"/>
                                             </constraints>
@@ -178,12 +186,12 @@
                                         <constraint firstItem="HDo-uD-s0m" firstAttribute="leading" secondItem="uZq-Gj-Vhu" secondAttribute="trailing" constant="101" id="Ijk-DP-aKm"/>
                                         <constraint firstItem="D2c-Xi-REL" firstAttribute="top" secondItem="uZq-Gj-Vhu" secondAttribute="bottom" id="Jan-hG-UZO"/>
                                         <constraint firstAttribute="bottom" secondItem="fC5-NF-zzh" secondAttribute="bottom" constant="11" id="ORd-UP-KhN"/>
-                                        <constraint firstItem="D2c-Xi-REL" firstAttribute="leading" secondItem="sDu-Jz-B2C" secondAttribute="leadingMargin" constant="16" id="UWE-sJ-BJC"/>
+                                        <constraint firstItem="D2c-Xi-REL" firstAttribute="leading" secondItem="sDu-Jz-B2C" secondAttribute="leadingMargin" id="UWE-sJ-BJC"/>
                                         <constraint firstItem="Exn-VC-wPZ" firstAttribute="top" secondItem="sDu-Jz-B2C" secondAttribute="topMargin" constant="14" id="WHF-vj-FSb"/>
                                         <constraint firstItem="fC5-NF-zzh" firstAttribute="leading" secondItem="sDu-Jz-B2C" secondAttribute="leading" constant="36" id="XmO-j6-ANo"/>
                                         <constraint firstItem="fC5-NF-zzh" firstAttribute="top" secondItem="D2c-Xi-REL" secondAttribute="bottom" constant="5" id="fwe-Yp-nX3"/>
                                         <constraint firstAttribute="trailing" secondItem="HDo-uD-s0m" secondAttribute="trailing" constant="19" id="piO-kt-D4L"/>
-                                        <constraint firstItem="uZq-Gj-Vhu" firstAttribute="leading" secondItem="sDu-Jz-B2C" secondAttribute="leadingMargin" constant="16" id="tCo-cx-4Tp"/>
+                                        <constraint firstItem="uZq-Gj-Vhu" firstAttribute="leading" secondItem="sDu-Jz-B2C" secondAttribute="leadingMargin" id="tCo-cx-4Tp"/>
                                         <constraint firstItem="uZq-Gj-Vhu" firstAttribute="top" secondItem="sDu-Jz-B2C" secondAttribute="topMargin" constant="11" id="vHh-A0-2Lz"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -201,7 +209,10 @@
                             <outlet property="delegate" destination="UjM-Qe-YN9" id="2qF-9V-QhT"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="M75-tE-X7s"/>
+                    <navigationItem key="navigationItem" title="Nearby" id="M75-tE-X7s"/>
+                    <connections>
+                        <outlet property="navigation" destination="o9b-FI-zNu" id="fOw-LN-SzX"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n7W-Oz-ffU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -257,7 +268,7 @@
                                                     </constraints>
                                                     <state key="normal" image="icX"/>
                                                     <connections>
-                                                        <action selector="closeButton:" destination="Uei-zK-4fj" eventType="touchUpInside" id="xTR-B2-QyI"/>
+                                                        <segue destination="kC2-Dh-1JE" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="1TH-Pm-jdS"/>
                                                     </connections>
                                                 </button>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icNavigate" translatesAutoresizingMaskIntoConstraints="NO" id="3W6-G3-szp">
@@ -505,10 +516,10 @@
         <!--Navigation Controller-->
         <scene sceneID="LjD-nX-xPD">
             <objects>
-                <navigationController storyboardIdentifier="StationsListNavControllerIdentifier" automaticallyAdjustsScrollViewInsets="NO" id="kC2-Dh-1JE" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="StationsListNavControllerIdentifier" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="kC2-Dh-1JE" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="ch6-WJ-10C"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UOa-0y-JsB">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -521,6 +532,9 @@
             <point key="canvasLocation" x="1918.840579710145" y="85.714285714285708"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Hpn-9S-fLS"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="icChevronRight" width="24" height="24"/>
         <image name="icFeedbackSad" width="29" height="29"/>

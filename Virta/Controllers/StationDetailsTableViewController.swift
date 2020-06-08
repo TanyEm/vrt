@@ -52,15 +52,6 @@ class StationDetailsTableViewController: UITableViewController {
         }
     }
     
-    @IBAction func closeButton(_ sender: Any) {
-        
-    }
-    
-//    override func viewDidLayoutSubviews() {
-//        super.viewDidLayoutSubviews()
-//        tableView.reloadData()
-//    }
-
     /*
     // MARK: - Navigation
 
