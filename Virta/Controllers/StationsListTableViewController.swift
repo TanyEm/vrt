@@ -7,24 +7,35 @@
 //
 
 import UIKit
+import CoreLocation
 
-class StationsListTableViewController: UITableViewController {
+class StationsListTableViewController: UITableViewController, CLLocationManagerDelegate {
     
     private let viewModel = StationsListViewModel()
     private var stationsList = [BasicStationInfo]()
     private let cellSpacingHeight: CGFloat = 5
+    
+    let locationManager = CLLocationManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        
+        // Ask for Authorisation from the User.
+        self.locationManager.requestAlwaysAuthorization()
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        // For use in foreground
+        self.locationManager.requestWhenInUseAuthorization()
+
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.viewModel.getStations() { list in
+        
+        self.viewModel.getStations(self.locationManager) { list in
             DispatchQueue.main.async {
                 print(list)
                 self.stationsList = list

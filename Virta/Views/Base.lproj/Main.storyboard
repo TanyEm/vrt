@@ -154,16 +154,34 @@
                                                 <constraint firstAttribute="width" constant="18" id="rOd-At-p3l"/>
                                             </constraints>
                                         </imageView>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fC5-NF-zzh">
+                                            <rect key="frame" x="36" y="65" width="359" height="56"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="wAG-1S-2UC"/>
+                                            </constraints>
+                                            <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Vrd-ND-aog">
+                                                <size key="itemSize" width="128" height="128"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            </collectionViewFlowLayout>
+                                            <cells/>
+                                        </collectionView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Exn-VC-wPZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="sDu-Jz-B2C" secondAttribute="leading" constant="20" symbolic="YES" id="2jd-Sr-2mr"/>
                                         <constraint firstItem="HDo-uD-s0m" firstAttribute="top" secondItem="sDu-Jz-B2C" secondAttribute="topMargin" constant="13" id="3tF-Eh-ro4"/>
+                                        <constraint firstAttribute="trailing" secondItem="fC5-NF-zzh" secondAttribute="trailing" constant="19" id="DMy-OT-KQ3"/>
                                         <constraint firstItem="HDo-uD-s0m" firstAttribute="leading" secondItem="Exn-VC-wPZ" secondAttribute="trailing" constant="11" id="DQ6-tf-ynq"/>
                                         <constraint firstItem="D2c-Xi-REL" firstAttribute="leading" secondItem="uZq-Gj-Vhu" secondAttribute="leading" id="Fag-vG-bYy"/>
                                         <constraint firstItem="HDo-uD-s0m" firstAttribute="leading" secondItem="uZq-Gj-Vhu" secondAttribute="trailing" constant="101" id="Ijk-DP-aKm"/>
                                         <constraint firstItem="D2c-Xi-REL" firstAttribute="top" secondItem="uZq-Gj-Vhu" secondAttribute="bottom" id="Jan-hG-UZO"/>
+                                        <constraint firstAttribute="bottom" secondItem="fC5-NF-zzh" secondAttribute="bottom" constant="11" id="ORd-UP-KhN"/>
                                         <constraint firstItem="D2c-Xi-REL" firstAttribute="leading" secondItem="sDu-Jz-B2C" secondAttribute="leadingMargin" constant="16" id="UWE-sJ-BJC"/>
                                         <constraint firstItem="Exn-VC-wPZ" firstAttribute="top" secondItem="sDu-Jz-B2C" secondAttribute="topMargin" constant="14" id="WHF-vj-FSb"/>
+                                        <constraint firstItem="fC5-NF-zzh" firstAttribute="leading" secondItem="sDu-Jz-B2C" secondAttribute="leading" constant="36" id="XmO-j6-ANo"/>
+                                        <constraint firstItem="fC5-NF-zzh" firstAttribute="top" secondItem="D2c-Xi-REL" secondAttribute="bottom" constant="5" id="fwe-Yp-nX3"/>
                                         <constraint firstAttribute="trailing" secondItem="HDo-uD-s0m" secondAttribute="trailing" constant="19" id="piO-kt-D4L"/>
                                         <constraint firstItem="uZq-Gj-Vhu" firstAttribute="leading" secondItem="sDu-Jz-B2C" secondAttribute="leadingMargin" constant="16" id="tCo-cx-4Tp"/>
                                         <constraint firstItem="uZq-Gj-Vhu" firstAttribute="top" secondItem="sDu-Jz-B2C" secondAttribute="topMargin" constant="11" id="vHh-A0-2Lz"/>

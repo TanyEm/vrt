@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import CoreLocation
 @testable import Virta
 
 class VirtaServiceIntegrationTests: XCTestCase {
@@ -59,8 +60,10 @@ class VirtaServiceIntegrationTests: XCTestCase {
         let expectation = self.expectation(description: "stationServiceGetStationsListSuccess")
         
         var received = [BasicStationInfo]()
+        
+        let locationManager = CLLocationManager()
 
-        stationService.getStationList() { (stationsList) in
+        stationService.getStationList(locationManager) { (stationsList) in
             received = stationsList
             expectation.fulfill()
         }

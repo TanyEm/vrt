@@ -22,8 +22,10 @@ struct BasicStationInfo: Codable {
     let isRemoved: Bool?
     let isPrivate: Bool?
     
+    var distanceFromUser: Double?
     
-    init(id: Int?, latitude: Double?, longitude: Double?, name: String?, city: String?, address: String?, provider: String?, evses: [Connector]?, icon: Int?, isRemoved: Bool?, isPrivate: Bool?) {
+    
+    init(id: Int?, latitude: Double?, longitude: Double?, name: String?, city: String?, address: String?, provider: String?, evses: [Connector]?, icon: Int?, isRemoved: Bool?, isPrivate: Bool?, distanceFromUser: Double?) {
         self.id = id
         self.latitude = latitude
         self.longitude = longitude
@@ -35,6 +37,7 @@ struct BasicStationInfo: Codable {
         self.icon = icon
         self.isRemoved = isRemoved
         self.isPrivate = isPrivate
+        self.distanceFromUser = distanceFromUser
     }
 }
 

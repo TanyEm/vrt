@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 class StationsListViewModel {
     
@@ -16,8 +17,8 @@ class StationsListViewModel {
         self.service = StationService()
     }
     
-    func getStations(_ result: @escaping ([BasicStationInfo]) -> ()) {
-        self.service.getStationList { (stationList) in
+    func getStations(_ manager: CLLocationManager, _ result: @escaping ([BasicStationInfo]) -> ()) {
+        self.service.getStationList(manager) { (stationList) in
             result(stationList)
         }
     }

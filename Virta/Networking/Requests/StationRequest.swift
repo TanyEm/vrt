@@ -37,8 +37,13 @@ struct StationRequest {
                     switch result {
                 
                     case .success:
-                        let result = try? JSONDecoder().decode([BasicStationInfo].self, from: unwrappedData)
-                        completion(Result.success(result!))
+                        do {
+                        let result = try JSONDecoder().decode([BasicStationInfo].self, from: unwrappedData)
+                        completion(Result.success(result))
+                        } catch let jsonError {
+                           print("JSON PARSE")
+                           print(jsonError)
+                        }
                     case .failure:
                         completion(Result.failure(HTTPNetworkError.decodingFailed))
                     }
