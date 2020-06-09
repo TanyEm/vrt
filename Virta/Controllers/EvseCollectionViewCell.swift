@@ -10,7 +10,7 @@ import UIKit
 
 class EvseCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var id: UILabel!
+    @IBOutlet weak var id: UITextField!
     @IBOutlet weak var evseCollectionViewCellWidthConstraint: NSLayoutConstraint!
     
     override func awakeFromNib() {
