@@ -46,12 +46,12 @@ class StationService {
                         let distance = loc1.distance(from: loc2)
                         data[i].distanceFromUser = distance
                     } else {
-                        data[i].distanceFromUser = Double(i)
+                        data[i].distanceFromUser = Double(i) / 2
                     }
                 }
                 
                 let dataSorted = data.sorted {
-                    Double($0.distanceFromUser!) > Double($1.distanceFromUser!)
+                    Double($0.distanceFromUser!) < Double($1.distanceFromUser!)
                 }
                 
                 listed(dataSorted)

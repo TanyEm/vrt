@@ -11,9 +11,11 @@ import CoreLocation
 
 class StationsListTableViewController: UITableViewController, CLLocationManagerDelegate {
     
+    
     private let viewModel = StationsListViewModel()
     private var stationsList = [BasicStationInfo]()
     private let cellSpacingHeight: CGFloat = 5
+    var connectorsList = [Connector]()
     
     let locationManager = CLLocationManager()
 
@@ -39,6 +41,7 @@ class StationsListTableViewController: UITableViewController, CLLocationManagerD
             DispatchQueue.main.async {
                 print(list)
                 self.stationsList = list
+                
                 self.tableView.reloadData()
             }
         }
@@ -65,8 +68,14 @@ class StationsListTableViewController: UITableViewController, CLLocationManagerD
         cell.address.text = stationItem.address
         cell.name.text = stationItem.name
         
-        let distanceHardcoded = 2.5
-        cell.distance.text = "\(distanceHardcoded) km"
+        cell.distance.text = "\(stationItem.distanceFromUser!) km"
+        
+//        guard let evs = stationItem.evses else {
+//            return cell
+//        }
+        
+        cell.connectors = [Connector]()
+        cell.connectorCollectionView.reloadSections(IndexSet(integer: 0))
 
         return cell
     }

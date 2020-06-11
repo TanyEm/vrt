@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Campton-BoldDEMO.otf">
+            <string>Campton-BoldDEMO</string>
+        </array>
+        <array key="Campton-LightDEMO.otf">
+            <string>Campton-LightDEMO</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ConnectorsCollectionViewCell" id="gTV-IL-0wX" customClass="ConnectorsCollectionViewCell" customModule="Virta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="99" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="99" height="44"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hK7-2u-b15">
+                        <rect key="frame" x="0.0" y="0.0" width="99" height="44"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="99" id="3gc-9o-0SU"/>
+                            <constraint firstAttribute="height" constant="44" id="lX4-G6-TnG"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JC2-9N-Nx3">
+                        <rect key="frame" x="0.0" y="10" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="CBj-kK-qvq"/>
+                            <constraint firstAttribute="height" constant="24" id="OPN-HI-vFh"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpf-yg-NEW">
+                        <rect key="frame" x="31" y="0.0" width="23" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="vaP-kE-8gg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Campton-BoldDEMO" family="Campton" pointSize="17"/>
+                        <color key="textColor" red="0.098039215690000001" green="0.1960784314" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFf-98-cJK">
+                        <rect key="frame" x="31" y="24" width="27" height="20"/>
+                        <fontDescription key="fontDescription" name="Campton-LightDEMO" family="Campton" pointSize="17"/>
+                        <color key="textColor" red="0.098039215690000001" green="0.1960784314" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="hK7-2u-b15" firstAttribute="top" secondItem="tpf-yg-NEW" secondAttribute="top" id="4ic-zq-QnG"/>
+                <constraint firstItem="tpf-yg-NEW" firstAttribute="leading" secondItem="JC2-9N-Nx3" secondAttribute="trailing" constant="7" id="CGa-pL-Jhy"/>
+                <constraint firstItem="iFf-98-cJK" firstAttribute="leading" secondItem="JC2-9N-Nx3" secondAttribute="trailing" constant="7" id="HbD-7j-p2B"/>
+                <constraint firstItem="JC2-9N-Nx3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Wg4-vd-pjG"/>
+                <constraint firstItem="tpf-yg-NEW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Z89-Ok-J6R"/>
+                <constraint firstItem="hK7-2u-b15" firstAttribute="leading" secondItem="JC2-9N-Nx3" secondAttribute="leading" id="bd0-zQ-fKd"/>
+                <constraint firstItem="JC2-9N-Nx3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hNl-pt-vHe"/>
+                <constraint firstAttribute="bottom" secondItem="JC2-9N-Nx3" secondAttribute="bottom" constant="10" id="tOG-pH-pTc"/>
+                <constraint firstItem="iFf-98-cJK" firstAttribute="top" secondItem="tpf-yg-NEW" secondAttribute="bottom" id="yud-gq-fDn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="130" height="101"/>
+            <connections>
+                <outlet property="connectorCollectionViewCellWidthConstraint" destination="hK7-2u-b15" id="hnv-T5-5Uw"/>
+                <outlet property="image" destination="JC2-9N-Nx3" id="wMy-pd-TYj"/>
+                <outlet property="kW" destination="tpf-yg-NEW" id="q5Y-ho-3gA"/>
+            </connections>
+            <point key="canvasLocation" x="118.11594202898551" y="120.53571428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>

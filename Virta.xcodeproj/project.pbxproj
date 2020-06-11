@@ -38,6 +38,8 @@
 		73AB3C0D247061D20050C676 /* ConnectorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB3C0C247061D20050C676 /* ConnectorType.swift */; };
 		73AB3C0F2470645B0050C676 /* EVSE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB3C0E2470645B0050C676 /* EVSE.swift */; };
 		73AB3C11247065260050C676 /* Pricing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB3C10247065260050C676 /* Pricing.swift */; };
+		73E2405924752A5800173E1C /* ConnectorsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E2405724752A5800173E1C /* ConnectorsCollectionViewCell.swift */; };
+		73E2405A24752A5800173E1C /* ConnectorsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73E2405824752A5800173E1C /* ConnectorsCollectionViewCell.xib */; };
 		73F7B47F2472133000FB4E11 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F7B47E2472133000FB4E11 /* AuthService.swift */; };
 		73F7B4832472215600FB4E11 /* VirtaServiceIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F7B4822472215600FB4E11 /* VirtaServiceIntegrationTests.swift */; };
 		73F7B4852472876600FB4E11 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F7B4842472876600FB4E11 /* LoginViewModel.swift */; };
@@ -108,6 +110,8 @@
 		73AB3C0C247061D20050C676 /* ConnectorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectorType.swift; sourceTree = "<group>"; };
 		73AB3C0E2470645B0050C676 /* EVSE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EVSE.swift; sourceTree = "<group>"; };
 		73AB3C10247065260050C676 /* Pricing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pricing.swift; sourceTree = "<group>"; };
+		73E2405724752A5800173E1C /* ConnectorsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectorsCollectionViewCell.swift; sourceTree = "<group>"; };
+		73E2405824752A5800173E1C /* ConnectorsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConnectorsCollectionViewCell.xib; sourceTree = "<group>"; };
 		73F7B47E2472133000FB4E11 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		73F7B4822472215600FB4E11 /* VirtaServiceIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtaServiceIntegrationTests.swift; sourceTree = "<group>"; };
 		73F7B4842472876600FB4E11 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -272,6 +276,8 @@
 				738D299824747D580065DE3C /* EvsesTableViewCell.swift */,
 				738D299A247484C00065DE3C /* EvseCollectionViewCell.swift */,
 				738D299B247484C00065DE3C /* EvseCollectionViewCell.xib */,
+				73E2405724752A5800173E1C /* ConnectorsCollectionViewCell.swift */,
+				73E2405824752A5800173E1C /* ConnectorsCollectionViewCell.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -465,6 +471,7 @@
 			files = (
 				73F7B4962473F9C300FB4E11 /* Campton-BoldDEMO.otf in Resources */,
 				738D299D247484C00065DE3C /* EvseCollectionViewCell.xib in Resources */,
+				73E2405A24752A5800173E1C /* ConnectorsCollectionViewCell.xib in Resources */,
 				73F7B4972473F9C300FB4E11 /* Campton-LightDEMO.otf in Resources */,
 				73AB3BDD24702A090050C676 /* LaunchScreen.storyboard in Resources */,
 				73AB3BDA24702A090050C676 /* Assets.xcassets in Resources */,
@@ -618,6 +625,7 @@
 				73AB3BD124702A030050C676 /* AppDelegate.swift in Sources */,
 				737822942470AD67009091DE /* HTTPNetworkResponse.swift in Sources */,
 				738D299924747D580065DE3C /* EvsesTableViewCell.swift in Sources */,
+				73E2405924752A5800173E1C /* ConnectorsCollectionViewCell.swift in Sources */,
 				73F7B4922473588A00FB4E11 /* StationTableViewCell.swift in Sources */,
 				73F7B48E24732D3900FB4E11 /* StationsListViewModel.swift in Sources */,
 				737822922470A8B0009091DE /* HTTPNetworkRequest.swift in Sources */,

@@ -196,6 +196,8 @@
                                 <accessibility key="accessibilityConfiguration" identifier="stationCell"/>
                                 <connections>
                                     <outlet property="address" destination="D2c-Xi-REL" id="cVX-c2-k9R"/>
+                                    <outlet property="connectorCollectionView" destination="fC5-NF-zzh" id="B6L-tt-Zo5"/>
+                                    <outlet property="connectorCollectionViewHeightConstraint" destination="wAG-1S-2UC" id="aPE-ik-PTX"/>
                                     <outlet property="distance" destination="Exn-VC-wPZ" id="je2-Bj-qlp"/>
                                     <outlet property="name" destination="uZq-Gj-Vhu" id="VGN-GO-ERC"/>
                                     <segue destination="Uei-zK-4fj" kind="presentation" identifier="stationTapped" modalPresentationStyle="fullScreen" id="Hpn-9S-fLS"/>
@@ -534,7 +536,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Hpn-9S-fLS"/>
+        <segue reference="1TH-Pm-jdS"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="icChevronRight" width="24" height="24"/>
