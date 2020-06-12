@@ -59,24 +59,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                     self.present(navigationController, animated:true, completion:nil)
                 }
             } else {
-                //self.displayMassage(userMassage: "Invalid credentials")
-                DispatchQueue.main.async {
-                    
-                    let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                    let navigationController = storyBoard.instantiateViewController(withIdentifier: "StationsListNavControllerIdentifier") as! UINavigationController
-
-                    navigationController.modalPresentationStyle = .fullScreen
-                    navigationController.modalTransitionStyle = .crossDissolve
-                    
-                    let viewController = storyBoard.instantiateViewController(withIdentifier: "StationsListViewController") as! StationsListTableViewController
-                    
-                    viewController.modalPresentationStyle = .fullScreen
-                    viewController.modalTransitionStyle = .crossDissolve
-                    
-                    navigationController.pushViewController(viewController, animated: false)
-                    
-                    self.present(navigationController, animated:true, completion:nil)
-                }
+                self.displayMessage(userMessage: "Authorization failed")
             }
         }
     }
@@ -127,9 +110,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: - Display Message
     
-    func displayMassage(userMassage:String) -> Void {
+    func displayMessage(userMessage:String) -> Void {
         DispatchQueue.main.async {
-            let alertController = UIAlertController(title: "Error", message: userMassage, preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Error", message: userMessage, preferredStyle: .alert)
             let alertAction = UIAlertAction(title: "OK", style: .default, handler: { (action: UIAlertAction) in
                 //Will working when OK tapped
                 DispatchQueue.main.async {
