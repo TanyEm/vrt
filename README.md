@@ -1,12 +1,14 @@
 # VRT iOS App assignment
 
+<img src="https://github.com/TanyEm/vrt/raw/master/screenshots/sc1.png" height="500"> <img src="https://github.com/TanyEm/vrt/raw/master/screenshots/sc2.png" height="500"> <img src="https://github.com/TanyEm/vrt/raw/master/screenshots/sc3.png" height="500">
+
 ## Description
 
 I decided to use **MVVM** architecture with a **network layer** and **services** covered by integration tests to develop the application.
 
 The application architecture scheme is:
 
-
+![schema](https://github.com/TanyEm/vrt/raw/master/screenshots/schema.png)
 
 ### Implementation notes
 
